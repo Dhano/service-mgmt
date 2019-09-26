@@ -11,10 +11,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+
+
+Route::middleware(['auth'])->group(function () {
+//    Route::get('/', 'HomeController@index')->name('home');
+    Route::get('/logout', '\App\Http\Controllers\Auth\LoginController@logout');
+
+    Route::redirect('/', '/dashboard');
+    Route::get('/', 'DashboardController@index');
+
+    Route::resource('/admin/services', 'ServiceController');
+});

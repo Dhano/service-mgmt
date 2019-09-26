@@ -14,7 +14,7 @@ class ServiceController extends Controller
      */
     public function index()
     {
-        //
+//        return view('services.manage-services');
     }
 
     /**
@@ -24,7 +24,7 @@ class ServiceController extends Controller
      */
     public function create()
     {
-        //
+        return view('services.add-service');
     }
 
     /**
@@ -35,7 +35,7 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        auth()->user()->services()->create($request->only('name'));
     }
 
     /**
