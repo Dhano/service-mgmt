@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fb628480-2c1d-451e-aa49-6a8713e8fa68" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Services/ServiceService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/ServiceService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/ServiceService.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/ServiceController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/services/add-service.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/services/add-service.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,6 +165,9 @@
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
@@ -219,7 +220,7 @@
       <updated>1569491359942</updated>
       <workItem from="1569491360991" duration="8731000" />
       <workItem from="1569500410407" duration="225000" />
-      <workItem from="1569500701439" duration="8788000" />
+      <workItem from="1569500701439" duration="9414000" />
     </task>
     <servers />
   </component>

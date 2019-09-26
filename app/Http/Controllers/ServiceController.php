@@ -46,7 +46,7 @@ class ServiceController extends Controller
 //        auth()->user()->services()->create($request->only('name'));
         try {
             $validatedData = $request->validate([
-                'name' => ['required|max:50']
+                'name' => ['required']
             ]);
 
             $this->sService->store($validatedData, Auth::id());
