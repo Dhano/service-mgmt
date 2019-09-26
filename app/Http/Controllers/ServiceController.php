@@ -3,10 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Service;
+use App\Services\ServiceService;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class ServiceController extends Controller
 {
+    protected $sService;
+
+    public function __construct(ServiceService $sService) {
+        $this->sService = $sService;
+    }
+
     /**
      * Display a listing of the resource.
      *
@@ -35,7 +43,17 @@ class ServiceController extends Controller
      */
     public function store(Request $request)
     {
-        auth()->user()->services()->create($request->only('name'));
+//        auth()->user()->services()->create($request->only('name'));
+        try {
+            $validatedData = $request->validate([
+                'name' => ['required|max:50']
+            ]);
+
+            $this->sService->store($validatedData, Auth::id());
+        } catch(\Exception $exception) {
+            error_log("lol");
+        }
+
     }
 
     /**

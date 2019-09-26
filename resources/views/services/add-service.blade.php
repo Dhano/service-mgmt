@@ -2,7 +2,7 @@
 
 @section('breadcrumb')
     <li class="breadcrumb-item"><a href="/home"><i class="fas fa-user"></i></a></li>
-    <li class="breadcrumb-item"><a href="/staff">Service</a></li>
+    <li class="breadcrumb-item"><a href="/admin/services">Service</a></li>
     <li class="breadcrumb-item active" aria-current="page">Add Service</li>
 @endsection
 

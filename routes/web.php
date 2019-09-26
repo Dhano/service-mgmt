@@ -25,3 +25,4 @@ Route::middleware(['auth'])->group(function () {
 
     Route::resource('/admin/services', 'ServiceController');
 });
+
